@@ -1,14 +1,34 @@
 package metier;
 
+import java.util.List;
+
 public class Client {
 	
 	private String nom;
 	private String prenom;
+	private List<Achat> achats;
 	
+
+
+	public List<Achat> getAchats() {
+		return achats;
+	}
+
+	public void setAchats(List<Achat> achats) {
+		this.achats = achats;
+	}
+
 	public Client(String nom, String prenom) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
+	}
+	
+	public Client(String nom, String prenom, List<Achat> achats) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.achats = achats;
 	}
 
 	public String getNom() {
