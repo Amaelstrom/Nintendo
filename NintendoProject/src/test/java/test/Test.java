@@ -4,6 +4,7 @@ import metier.Boutique;
 import metier.Client;
 import metier.Console;
 import metier.Jeu;
+import metier.Salon;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Console c1=new Console("Nintendo 64");
+		Console c1=new Salon("Nintendo 64",22,null);
 		Boutique b1=new Boutique("Dynamite games","78 rue des tartes");
 		List<Achat> achats=new ArrayList();
 		
